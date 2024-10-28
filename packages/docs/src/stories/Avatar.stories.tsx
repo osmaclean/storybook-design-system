@@ -8,6 +8,20 @@ export default {
     src: 'https://github.com/osmaclean.png',
     alt: 'Lucas Maclean',
   },
+  argTypes: {
+    src: {
+      description: 'The URL of the image to display.',
+      control: {
+        type: 'text',
+      },
+    },
+    alt: {
+      description: 'The alternative text for the image, used by screen readers.',
+      control: {
+        type: 'text',
+      },
+    }
+  },
 } as Meta<AvatarProps>;
 
 export const Primary: StoryObj<AvatarProps> = {};
